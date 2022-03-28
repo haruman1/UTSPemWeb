@@ -1,0 +1,20 @@
+#viewer {
+  background-color: #c91919;
+  /* width: 800px;
+  height: 500px; */
+}
+
+#read iframe {
+  margin-top: -50px;
+  width: 1080px;
+  height: 720px;
+}
+
+@media screen and (max-width: 760px) {
+  #read iframe {
+    margin-top: -200px;
+    /* bottom: 111px; */
+    width: 350px;
+    height: 475px;
+  }
+}

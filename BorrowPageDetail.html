@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Detail Pinjam</title>
+    <link rel="stylesheet" href="/assets/styles/css/common/BorrowPageDetail.css">
+    <link rel="stylesheet" href="/assets/styles/css/BorrowPageDetail.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <article id="header">
+            <a href="./index.html" class="brand">E - Lib</a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html" class="menu">Home</a></li>
+                    <li><a href="./CategoryBook.html" class="menu">Book</a></li>
+                    <li><a href="#" class="menu">About</a></li>
+                    <li><a href="#" class="menu">Contact</a></li>
+                </ul>
+            </nav>
+        </article>
+    </header>
+
+    <!-- Body -->
+    <main>
+        <section class="peminjaman container">
+
+            <!-- Left Panel -->
+            <div class="left-panel">
+                <div class="head">
+                    <h2 class="section-title">Peminjaman</h2>
+                </div>
+                <div class="content">
+                    <div class="item box">
+                        <h3 id="AB">Buku yang akan dipinjam</h3>
+                        <div class="list-category">
+                            <div class="item-list">
+                                <div class="item-img">
+                                    <a href="BorrowPage.html">
+                                        <img src="./assets/image/buku1.jpg" alt="img" class="img" syle="height: 500px">
+                                    </a>
+                                    <div class="item-info">
+                                        <a href="BorrowPage.html">
+                                            <h4>Catcher in The Rye</h4>
+                                            <p>J.D. Salinger</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item box">
+                        <h3 id="Durasi">Durasi Peminjaman</h3>
+                        <p>Durasi Pinjam</p>
+                        <select class="inputbox" onclick="document.getElementById('durasi').innerHTML= value" required>
+                            <option >--Pilih Durasi--</option>
+                            <option value="7 Hari">7 Hari</option>
+                            <option value="14 Hari">14 Hari</option>
+                            <option value="28 Hari">28 Hari</option>
+                            <option value="120 Hari">120 Hari</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel -->
+            <div class="right-panel">
+
+                <!-- Ringkasan Box -->
+                <div class="pinjam box">
+                    <h3>Ringkasan Pinjaman</h3>
+                    <div class="buku-dipinjam" style="border-bottom: 1px solid #E1E8EE;padding-bottom: 20px;">
+                        <h3 style="padding-bottom: 10px;">Buku yang dipinjam</h3>
+                        <p>Catcher in The Rye</p>
+                        <p>J.D. Salinger</p>
+                    </div>
+                    <div class="durasi-pinjam" style="border-bottom: 1px solid #E1E8EE;padding-bottom: 20px;">
+                        <h3 style="padding-bottom: 10px;">Durasi Pinjam</h3>
+                        <p id="durasi">Durasi Pinjam</p>
+                    </div>
+                    <a href="./index.html">
+                        <button class="pinjam-btn" style="margin-top: 20px;">Pinjam</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2022 Kijang1. All rights reserved</p>
+    </footer>
+</body>
+
+</html>
